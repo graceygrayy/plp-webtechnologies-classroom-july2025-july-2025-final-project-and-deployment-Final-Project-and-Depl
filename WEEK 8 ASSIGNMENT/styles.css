@@ -661,10 +661,11 @@ footer {
   font-weight: bold;
 }
 .welcome-image img {
-  width: 80%;        /* makes the image smaller than full width */
-  max-width: 600px;  /* limits maximum size */
-  height: auto;      /* keeps image proportions */
+  width: 300px;       /* controls the width */
+  height: 450px;      /* controls vertical height (portrait style) */
+  object-fit: cover;  /* crops/scales image nicely */
   display: block;
-  margin: 20px auto; /* centers the image */
+  margin: 20px auto;  /* centers the image */
   border-radius: 10px; /* optional rounded corners */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2); /* optional subtle shadow */
 }
