@@ -1,281 +1,96 @@
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* ---------- Basic reset & container ---------- */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html,body { height: 100%; font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial; }
+
+/* container to align content */
+.container {
+  width: 94%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #000; /* Black background */
-  color: #fff;
-  line-height: 1.6;
+/* ---------- Header / Navbar ---------- */
+:root {
+  --header-height: 72px; /* adjust if you want header taller/smaller */
 }
 
-/* Navbar */
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
+.site-header {
+  background: #ffffff;               /* white header like your screenshot */
+  border-bottom: 1px solid #e6e6e6;  /* subtle divider */
+  height: var(--header-height);
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 12px 40px;
-  background-color: #000;  /* Black header */
-  border-bottom: 1px solid #333;
+  position: sticky; /* keeps header visible on scroll */
+  top: 0;
   z-index: 1000;
 }
 
-.logo h1 {
-  color: #fff;   /* White brand name */
-  font-size: 24px;
-  font-weight: bold;
-  letter-spacing: 1px;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: #fff; /* White links */
-  font-weight: 500;
-  font-size: 14px;
-  transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-  color: #ccc; /* Lighter gray on hover */
-}
-
-/* Hero Section */
-.hero {
-  height: 100vh;
-  background: url('images/perfume-bg.jpg') no-repeat center center/cover; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 0 20px;
-}
-
-.hero-content h2 {
-  font-size: 48px;
-  color: #fff; /* White */
-  margin-bottom: 20px;
-}
-
-.hero-content p {
-  font-size: 18px;
-  margin-bottom: 30px;
-}
-
-.btn {
-  display: inline-block;
-  padding: 12px 25px;
-  background-color: #fff; /* White button */
-  color: #000;           /* Black text */
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background 0.3s ease;
-}
-
-.btn:hover {
-  background-color: #ddd; /* Light gray hover */
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #111;
-  border-top: 1px solid #333;
-  font-size: 14px;
-}
-/* Section titles */
-.section-title {
-  font-size: 28px;
-  margin-bottom: 20px;
-  color: #fff;
-  text-align: center;
-}
-
-/* Mission */
-.mission-section {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 40px 20px;
-  text-align: center;
-  color: #fff;
-  line-height: 1.6;
-}
-
-/* FAQ */
-.faq-section {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 40px 20px;
-  color: #fff;
-}
-
-.faq-item {
-  margin-bottom: 15px;
-  border-bottom: 1px solid #444;
-}
-
-.faq-question {
-  background: none;
-  border: none;
-  color: #fff;
-  width: 100%;
-  text-align: left;
-  font-size: 16px;
-  padding: 12px 0;
-  cursor: pointer;
-}
-
-.faq-answer {
-  display: none;
-  padding: 10px 0 15px;
-  font-size: 14px;
-  color: #ddd;
-}
-
-.faq-question.active {
-  color: #ffcc00; /* highlight active question */
-}
-/* ---------- Hero Section ---------- */
-.hero {
-  height: 100vh;
-  background: url("../images/hero-bg.jpg") center/cover no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: #fff;
-  position: relative;
-  padding: 0 20px;
-}
-.hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.6); /* dark overlay */
-}
-.hero-inner {
-  position: relative;
-  z-index: 1;
-  max-width: 700px;
-}
-.hero-inner h2 {
-  font-size: 42px;
-  margin-bottom: 20px;
-}
-.hero-inner p {
-  font-size: 18px;
-  margin-bottom: 30px;
-}
-.btn {
-  background: #fff;
-  color: #000;
-  padding: 10px 22px;
-  border-radius: 25px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: all 0.3s ease;
-}
-.btn:hover {
-  background: #ffcc00;
-  color: #000;
-}
-
-/* ---------- Featured Section ---------- */
-.featured {
-  padding: 60px 20px;
-  text-align: center;
-  color: #fff;
-}
-.featured-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 25px;
-  margin-top: 30px;
-}
-.product-card {
-  background: #111;
-  padding: 20px;
-  border-radius: 8px;
-  transition: transform 0.3s ease;
-}
-.product-card:hover {
-  transform: translateY(-8px);
-}
-.product-card img {
-  width: 100%;
-  height: auto;
-  border-radius: 6px;
-  margin-bottom: 15px;
-}
-.product-card h3 {
-  margin-bottom: 10px;
-  color: #ffcc00;
-}
-.center-btn {
-  margin-top: 30px;
-}
-
-/* ---------- CTA Section ---------- */
-.cta {
-  background: #000;
-  color: #fff;
-  text-align: center;
-  padding: 60px 20px;
-}
-.cta h2 {
-  font-size: 30px;
-  margin-bottom: 15px;
-}
-/* ---------- Header / Navbar ---------- */
-header {
-  background: #000;
-  padding: 15px 30px;
-}
-
-.navbar {
+/* header inner layout */
+.header-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 100%;
 }
 
-.logo h1 {
-  color: #fff;
-  font-size: 24px;
-  font-weight: bold;
-  margin: 0;
+/* Brand name */
+.brand {
+  color: #111;               /* dark/black text */
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.4px;
 }
 
+/* Nav links */
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 25px;
-  margin: 0;
-  padding: 0;
+  gap: 22px;
+  align-items: center;
 }
-
-.nav-links li a {
+.nav-links a {
   text-decoration: none;
-  color: #fff;
-  font-size: 16px;
-  font-weight: 500;
-  transition: color 0.3s ease;
+  color: #222;
+  font-size: 14px;
+  padding: 8px 0;
+  transition: color .18s ease;
+}
+.nav-links a:hover,
+.nav-links a.active {
+  color: #000; /* darker on hover/active */
 }
 
-.nav-links li a:hover,
-.nav-links li a.active {
-  color: #ffcc00;
+/* ---------- Hero Section ---------- */
+/* Make hero occupy full viewport minus header height */
+.hero {
+  height: calc(100vh - var(--header-height));
+  width: 100%;
+  overflow: hidden;
+  display: block;
+}
+
+/* The hero image fills, crops and centers like your screenshot */
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;       /* crop without stretching */
+  object-position: center; /* center the subject */
+  display: block;
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+  background: #fff;
+  border-top: 1px solid #e6e6e6;
+  color: #333;
+  padding: 18px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* ---------- Responsive tweaks ---------- */
+@media (max-width: 720px) {
+  .nav-links { gap: 12px; font-size: 13px; }
+  .brand { font-size: 18px; }
+  :root { --header-height: 64px; }
 }
