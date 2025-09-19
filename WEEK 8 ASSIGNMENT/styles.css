@@ -144,3 +144,7 @@ footer {
   padding: 6px;            /* some breathing space */
   border-radius: 8px;      /* rounded corners */
 }
+.logo img {
+  height: 80px;   /* make logo bigger */
+  width: auto;    /* keep natural proportions */
+}
