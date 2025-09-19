@@ -14,26 +14,48 @@
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
+        <li><a href="products.html">Products</a></li>
         <li><a href="contact.html" class="active">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="contact">
+  <main class="contact">
     <h2>Contact Us</h2>
-    <form id="contactForm">
-      <label for="name">Name:</label>
-      <input type="text" id="name" required>
+    <p>We’d love to hear from you! Get in touch using the form below or find us at our shop.</p>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" required>
+    <div class="contact-grid">
+      <!-- Contact Form -->
+      <form class="contact-form">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
 
-      <label for="message">Message:</label>
-      <textarea id="message" required></textarea>
+        <label for="email">Your Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
 
-      <button type="submit" class="btn">Send Message</button>
-    </form>
-  </section>
+        <label for="message">Your Message</label>
+        <textarea id="message" rows="5" placeholder="Type your message..." required></textarea>
+
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+
+      <!-- Contact Info & Map -->
+      <div class="contact-info">
+        <h3>Our Info</h3>
+        <p><strong>Phone:</strong> +233 24 123 4567</p>
+        <p><strong>Email:</strong> info@graceyoilperfume.com</p>
+        <p><strong>Location:</strong> Accra, Ghana</p>
+
+        <!-- Google Map -->
+        <div class="map">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.0569296218536!2d-0.1870!3d5.6037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMzYnMTMuMyJOIDDCsDExJzA0LjUiVw!5e0!3m2!1sen!2sgh!4v1670000000000"
+            width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </main>
 
   <footer>
     <p>© 2025 Gracey Oil Perfume. All rights reserved.</p>
