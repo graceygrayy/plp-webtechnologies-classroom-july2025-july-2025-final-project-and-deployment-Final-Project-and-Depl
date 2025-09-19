@@ -3,69 +3,39 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Home | Gracey Oil Perfume</title>
+  <title>Gracey Oil Perfume</title>
   <link rel="stylesheet" href="css/styles.css">
-  <script src="js/script.js" defer></script>
 </head>
 <body>
 
   <!-- Header / Navbar -->
-  <header>
-    <nav class="navbar">
-      <div class="logo"><h1>Gracey Oil Perfume</h1></div>
-      <ul class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <div class="brand">Gracey Oil Perfume</div>
+
+      <nav role="navigation" aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-inner">
-      <h2>Luxury Oil Perfumes</h2>
-      <p>Experience elegance that lasts all day. Handcrafted, timeless, and unforgettable.</p>
-      <a href="products.html" class="btn">Shop Now</a>
-    </div>
-  </section>
+  <!-- Full-bleed hero image (fills viewport under header) -->
+  <main>
+    <section class="hero" aria-label="Featured perfume">
+      <!-- Use an <img> so object-fit handles cropping like the screenshot -->
+      <img src="images/hero.jpg" alt="Perfume bottles on wooden tray" class="hero-img">
+    </section>
+  </main>
 
-  <!-- Featured Products -->
-  <section class="page-section featured">
-    <h2 class="section-title">Our Featured Scents</h2>
-    <div class="featured-grid">
-      <div class="product-card">
-        <img src="images/featured1.jpg" alt="Perfume Bottle 1">
-        <h3>Rose & Oud</h3>
-        <p>Floral with a deep woody touch — a timeless classic.</p>
-      </div>
-      <div class="product-card">
-        <img src="images/featured2.jpg" alt="Perfume Bottle 2">
-        <h3>Amber Essence</h3>
-        <p>Warm amber blended with spice, bold and elegant.</p>
-      </div>
-      <div class="product-card">
-        <img src="images/featured3.jpg" alt="Perfume Bottle 3">
-        <h3>Citrus Musk</h3>
-        <p>Fresh citrus uplift with a soft musky base.</p>
-      </div>
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>&copy; 2025 Gracey Oil Perfume. All rights reserved.</p>
     </div>
-    <div class="center-btn">
-      <a href="products.html" class="btn">View All Products</a>
-    </div>
-  </section>
-
-  <!-- CTA Section -->
-  <section class="page-section cta">
-    <h2>Discover Your Signature Scent</h2>
-    <p>From subtle elegance to bold statements, Gracey Oil Perfume has the perfect fragrance for every personality.</p>
-    <a href="contact.html" class="btn">Contact Us</a>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Gracey Oil Perfume. All rights reserved.</p>
   </footer>
 
 </body>
