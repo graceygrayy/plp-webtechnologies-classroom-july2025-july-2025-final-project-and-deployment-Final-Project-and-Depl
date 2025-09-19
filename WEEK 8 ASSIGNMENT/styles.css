@@ -23,12 +23,12 @@ body {
   align-items: center;
   padding: 12px 40px;
   background-color: #000;  /* Black header */
-  border-bottom: 2px solid #ffcc00; /* Gold underline */
+  border-bottom: 1px solid #333;
   z-index: 1000;
 }
 
 .logo h1 {
-  color: #ffcc00;   /* Gold brand name */
+  color: #fff;   /* White brand name */
   font-size: 24px;
   font-weight: bold;
   letter-spacing: 1px;
@@ -49,7 +49,7 @@ body {
 }
 
 .nav-links a:hover {
-  color: #ffcc00; /* Gold hover effect */
+  color: #ccc; /* Lighter gray on hover */
 }
 
 /* Hero Section */
@@ -65,7 +65,7 @@ body {
 
 .hero-content h2 {
   font-size: 48px;
-  color: #ffcc00; /* Gold */
+  color: #fff; /* White */
   margin-bottom: 20px;
 }
 
@@ -77,8 +77,8 @@ body {
 .btn {
   display: inline-block;
   padding: 12px 25px;
-  background-color: #ffcc00; /* Gold button */
-  color: #000;               /* Black text */
+  background-color: #fff; /* White button */
+  color: #000;           /* Black text */
   font-weight: bold;
   text-decoration: none;
   border-radius: 5px;
@@ -86,7 +86,7 @@ body {
 }
 
 .btn:hover {
-  background-color: #e6b800; /* Darker gold */
+  background-color: #ddd; /* Light gray hover */
 }
 
 /* Footer */
