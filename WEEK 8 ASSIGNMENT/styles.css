@@ -137,3 +137,10 @@ footer {
 .nav-links a:hover {
   color: #ffcc00;   /* highlight gold when hovered */
 }
+.logo img {
+  height: 80px;            /* bigger logo */
+  width: auto;
+  background-color: #fff;  /* white background so it's visible */
+  padding: 6px;            /* some breathing space */
+  border-radius: 8px;      /* rounded corners */
+}
