@@ -221,3 +221,78 @@ footer {
   padding: 15px;
   font-size: 14px;
 }
+/* About Page Header */
+.about-header {
+  text-align: center;
+  padding: 60px 20px 20px;
+  background: #000;
+  color: #fff;
+}
+
+.about-header h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.about-subnav {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 0;
+}
+
+.about-subnav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.about-subnav a:hover {
+  color: #ffcc00;
+}
+
+/* Sections */
+.about-section, .mission-section, .faq-section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-section h3,
+.mission-section h3,
+.faq-section h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+/* FAQ Accordion */
+.faq-item {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ccc;
+}
+
+.faq-question {
+  width: 100%;
+  text-align: left;
+  background: #f9f9f9;
+  border: none;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.faq-question:hover {
+  background: #eee;
+}
+
+.faq-answer {
+  display: none;
+  padding: 0 15px 15px;
+  font-size: 15px;
+  color: #333;
+}
