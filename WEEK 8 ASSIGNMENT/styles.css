@@ -97,3 +97,55 @@ footer {
   border-top: 1px solid #333;
   font-size: 14px;
 }
+/* Section titles */
+.section-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+/* Mission */
+.mission-section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* FAQ */
+.faq-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  color: #fff;
+}
+
+.faq-item {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #444;
+}
+
+.faq-question {
+  background: none;
+  border: none;
+  color: #fff;
+  width: 100%;
+  text-align: left;
+  font-size: 16px;
+  padding: 12px 0;
+  cursor: pointer;
+}
+
+.faq-answer {
+  display: none;
+  padding: 10px 0 15px;
+  font-size: 14px;
+  color: #ddd;
+}
+
+.faq-question.active {
+  color: #ffcc00; /* highlight active question */
+}
