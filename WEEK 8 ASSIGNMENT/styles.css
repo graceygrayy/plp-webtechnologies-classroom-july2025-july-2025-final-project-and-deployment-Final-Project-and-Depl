@@ -106,3 +106,34 @@ footer {
   background: #eee;
   margin-top: 2rem;
 }
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;       /* smaller padding */
+  background-color: #000;   /* black background */
+}
+
+.logo img {
+  height: 40px;   /* smaller logo */
+  width: auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;     /* white text on black */
+  font-weight: 500;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ffcc00;   /* highlight gold when hovered */
+}
