@@ -660,3 +660,11 @@ footer {
   border-radius: 5px;
   font-weight: bold;
 }
+.welcome-image img {
+  width: 80%;        /* makes the image smaller than full width */
+  max-width: 600px;  /* limits maximum size */
+  height: auto;      /* keeps image proportions */
+  display: block;
+  margin: 20px auto; /* centers the image */
+  border-radius: 10px; /* optional rounded corners */
+}
