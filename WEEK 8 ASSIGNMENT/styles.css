@@ -462,3 +462,38 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+/* FAQ Accordion */
+.faq-item button {
+  width: 100%;
+  background: black;
+  color: white;
+  padding: 1rem;
+  text-align: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.faq-item button:hover {
+  background: #333;
+}
+
+.faq-item button.open {
+  background: #555;
+}
+
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, padding 0.3s ease;
+  background: #f9f9f9;
+  padding: 0 1rem;
+  border-left: 3px solid black;
+}
+
+.answer.active {
+  max-height: 200px;
+  padding: 1rem;
+}
