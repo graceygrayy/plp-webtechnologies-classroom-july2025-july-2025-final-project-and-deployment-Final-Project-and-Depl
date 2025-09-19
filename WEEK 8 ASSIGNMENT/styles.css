@@ -309,6 +309,7 @@ footer {
   color: #000;               /* Black text on hover */
 }
 
+
 /* Answers */
 .faq-answer {
   display: none;
@@ -325,4 +326,57 @@ footer {
 @keyframes slideDown {
   from { opacity: 0; transform: translateY(-10px); }
   to { opacity: 1; transform: translateY(0); }
+}
+/* Products Page */
+.products-page {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.products-page h2 {
+  font-size: 30px;
+  margin-bottom: 40px;
+  color: #000;
+}
+
+/* Product Grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+}
+
+/* Product Card */
+.product-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.product-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.product-card h3 {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #000;
+}
+
+.product-card .price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffcc00; /* Gold accent */
 }
