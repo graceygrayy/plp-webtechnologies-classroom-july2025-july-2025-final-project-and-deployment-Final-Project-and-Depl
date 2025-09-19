@@ -268,31 +268,61 @@ footer {
   color: #000;
 }
 
-/* FAQ Accordion */
-.faq-item {
-  margin-bottom: 15px;
-  border-bottom: 1px solid #ccc;
+/* FAQ Section */
+.faq-section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
+.faq-section h3 {
+  font-size: 28px;
+  margin-bottom: 25px;
+  text-align: center;
+  color: #000;
+}
+
+/* FAQ Items */
+.faq-item {
+  margin-bottom: 15px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Question Buttons */
 .faq-question {
   width: 100%;
   text-align: left;
-  background: #f9f9f9;
+  background: #000;          /* Black background */
+  color: #fff;               /* White text */
   border: none;
-  padding: 15px;
+  padding: 15px 20px;
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 .faq-question:hover {
-  background: #eee;
+  background: #ffcc00;       /* Gold hover */
+  color: #000;               /* Black text on hover */
 }
 
+/* Answers */
 .faq-answer {
   display: none;
-  padding: 0 15px 15px;
+  background: #f9f9f9;       /* Soft white background */
+  padding: 15px 20px;
   font-size: 15px;
   color: #333;
+  line-height: 1.6;
+  border-top: 1px solid #ddd;
+  animation: slideDown 0.3s ease;
+}
+
+/* Smooth Slide Effect */
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
