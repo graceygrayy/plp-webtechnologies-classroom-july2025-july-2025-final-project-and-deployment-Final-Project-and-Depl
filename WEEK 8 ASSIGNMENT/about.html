@@ -1,39 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gracey Oil Perfume | About</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About | Gracey Oil Perfume</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js" defer></script>
 </head>
 <body>
+
+  <!-- Header / Navbar -->
   <header>
-    <nav>
-      <h1>Gracey Oil Perfume</h1>
-      <ul>
+    <nav class="navbar">
+      <div class="logo"><h1>Gracey Oil Perfume</h1></div>
+      <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html" class="active">About</a></li>
+        <li><a href="products.html">Products</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="about">
-    <h2>About Us</h2>
+  <!-- Hero Intro -->
+  <section class="hero-mini">
+    <div class="hero-mini-inner">
+      <h2>Our Story</h2>
+      <p>Handcrafted oil perfumes designed to celebrate timeless elegance and individuality.</p>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <main class="page-section about-section">
+    <h2 class="section-title">About Us</h2>
+    <div class="about-grid">
+      <article class="about-text">
+        <p>
+          Gracey Oil Perfume began from a love of classic fragrances and the desire to create affordable luxury.
+          We blend premium oils and natural extracts to craft long-lasting scents that tell a story.
+        </p>
+        <p>
+          Whether you prefer floral, woody, or oriental notes,
+          each bottle is carefully blended and bottled with care. We believe a perfume should be personal, memorable, and true to you.
+        </p>
+      </article>
+
+      <aside class="about-images">
+        <figure class="img-large">
+          <img src="images/about-hero.jpg" alt="Perfume showcase">
+          <figcaption>Signature Blends</figcaption>
+        </figure>
+      </aside>
+    </div>
+  </main>
+
+  <!-- Mission Section -->
+  <section class="page-section mission-section">
+    <h2 class="section-title">Our Mission</h2>
     <p>
-      Gracey Oil Perfume is dedicated to bringing you luxury oil perfumes crafted from the finest ingredients.  
-      Our mission is to create unforgettable scents that are elegant, affordable, and long-lasting.
-    </p>
-    <p>
-      Why choose us?  
-      ✔ Premium oil-based perfumes  
-      ✔ Unique signature blends  
-      ✔ Affordable luxury
+      At Gracey Oil Perfume, our mission is to make luxury fragrances accessible to everyone.
+      We aim to create scents that inspire confidence and bring elegance into everyday life —
+      crafted with passion, authenticity, and excellence.
     </p>
   </section>
 
+  <!-- FAQ Section -->
+  <section class="page-section faq-section">
+    <h2 class="section-title">Frequently Asked Questions</h2>
+    <div class="faq">
+      <div class="faq-item">
+        <button class="faq-question">How long do your perfumes last?</button>
+        <div class="faq-answer">
+          <p>Because our perfumes are oil-based, they last up to 8–12 hours on skin and even longer on clothing.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Do you ship nationwide?</button>
+        <div class="faq-answer">
+          <p>Yes, we ship across the country with reliable delivery partners. International shipping is also available on request.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Can I request a custom fragrance?</button>
+        <div class="faq-answer">
+          <p>Absolutely! We offer bespoke blends for individuals, events, and corporate gifts. Contact us to discuss your preferences.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <p>© 2025 Gracey Oil Perfume. All rights reserved.</p>
+    <p>&copy; 2025 Gracey Oil Perfume. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
