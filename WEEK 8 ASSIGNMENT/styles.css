@@ -149,3 +149,94 @@ footer {
 .faq-question.active {
   color: #ffcc00; /* highlight active question */
 }
+/* ---------- Hero Section ---------- */
+.hero {
+  height: 100vh;
+  background: url("../images/hero-bg.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  padding: 0 20px;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6); /* dark overlay */
+}
+.hero-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+}
+.hero-inner h2 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+.hero-inner p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.btn {
+  background: #fff;
+  color: #000;
+  padding: 10px 22px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  background: #ffcc00;
+  color: #000;
+}
+
+/* ---------- Featured Section ---------- */
+.featured {
+  padding: 60px 20px;
+  text-align: center;
+  color: #fff;
+}
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+.product-card {
+  background: #111;
+  padding: 20px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+.product-card:hover {
+  transform: translateY(-8px);
+}
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+.product-card h3 {
+  margin-bottom: 10px;
+  color: #ffcc00;
+}
+.center-btn {
+  margin-top: 30px;
+}
+
+/* ---------- CTA Section ---------- */
+.cta {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+}
+.cta h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
