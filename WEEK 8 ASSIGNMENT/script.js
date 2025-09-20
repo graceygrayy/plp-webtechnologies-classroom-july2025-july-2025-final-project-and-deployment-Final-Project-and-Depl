@@ -72,3 +72,21 @@ document.addEventListener("DOMContentLoaded", function () {
     form.reset(); // clear inputs
   });
 });
+// Homepage Image Slider
+let currentSlide = 0;
+const slides = document.querySelectorAll(".slide");
+
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    slide.classList.remove("active");
+    if (i === index) {
+      slide.classList.add("active");
+    }
+  });
+}
+
+// Auto slide every 4 seconds
+setInterval(() => {
+  currentSlide = (currentSlide + 1) % slides.length;
+  showSlide(currentSlide);
+}, 4000);
