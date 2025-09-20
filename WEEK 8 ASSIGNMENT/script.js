@@ -41,31 +41,6 @@ faqButtons.forEach(btn => {
   });
 });
 
-// ========== Contact Form Validation ==========
-const form = document.querySelector(".contact-form");
-
-if (form) {
-  form.addEventListener("submit", (e) => {
-    e.preventDefault();
-
-    const name = document.querySelector("#name").value.trim();
-    const email = document.querySelector("#email").value.trim();
-    const message = document.querySelector("#message").value.trim();
-
-    if (!name || !email || !message) {
-      alert("⚠️ Please fill out all fields before sending.");
-      return;
-    }
-
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-      alert("⚠️ Please enter a valid email address.");
-      return;
-    }
-
-    alert("✅ Thank you, " + name + "! Your message has been sent.");
-    form.reset();
-  });
-}
 // Contact Form Validation
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("contactForm");
