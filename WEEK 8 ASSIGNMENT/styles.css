@@ -890,6 +890,7 @@ footer a:hover {
 .nav-links a:hover {
   color: #c19a6b; /* Gold hover */
 }
+
 /* ===== Products Section ===== */
 .products {
   padding: 60px 20px;
@@ -961,4 +962,48 @@ footer a:hover {
   font-weight: bold;
   color: #c19a6b;
   margin-bottom: 10px;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .welcome-text {
+    font-size: 18px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 20px;
+  }
+
+  nav ul li a {
+    font-size: 14px;
+  }
+
+  .product-card h3 {
+    font-size: 16px;
+  }
+
+  .product-card p {
+    font-size: 12px;
+  }
+
+  .product-card .price {
+    font-size: 16px;
+  }
 }
