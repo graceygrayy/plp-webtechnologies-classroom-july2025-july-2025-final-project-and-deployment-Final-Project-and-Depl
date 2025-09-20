@@ -1007,3 +1007,46 @@ footer a:hover {
     font-size: 16px;
   }
 }
+/* Banner Slider */
+.banner {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
+}
+
+.slider img.active {
+  display: block;
+  animation: fade 1s ease-in-out;
+}
+
+@keyframes fade {
+  from { opacity: 0.4; }
+  to { opacity: 1; }
+}
+
+.banner-text {
+  position: relative;
+  z-index: 2;
+  background: rgba(0,0,0,0.4);
+  padding: 20px;
+  border-radius: 10px;
+}
