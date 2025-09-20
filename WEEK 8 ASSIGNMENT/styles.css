@@ -724,3 +724,135 @@ footer {
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
+/* ====== Global Styles ====== */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: #fffdf8; /* soft white-beige background */
+  color: #333;
+}
+
+/* Headings */
+h2, h3 {
+  font-family: 'Playfair Display', serif;
+  color: #c19a6b; /* gold tone */
+  margin-bottom: 15px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 25px;
+  background-color: #c19a6b; /* gold */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.btn:hover {
+  background-color: #a77d4b; /* darker gold */
+}
+
+/* Hero/Banner Section */
+.hero-img-container {
+  position: relative;
+  width: 90%;
+  max-width: 1000px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 12px;
+  margin: 30px auto;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.45);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Welcome Image */
+.welcome-image img {
+  width: 300px;
+  height: 450px;
+  object-fit: cover;
+  display: block;
+  margin: 40px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* Collections Section */
+.collections {
+  padding: 60px 20px;
+  background: #fff;
+}
+
+.collection-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.perfume-list {
+  flex: 1;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+.perfume-list li {
+  font-size: 1em;
+  margin: 8px 0;
+  color: #444;
+}
+
+.perfume-grid {
+  flex: 2;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.perfume-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+footer p {
+  margin: 5px 0;
+}
+footer a {
+  color: #c19a6b;
+  text-decoration: none;
+  margin: 0 10px;
+}
+footer a:hover {
+  text-decoration: underline;
+}
