@@ -66,3 +66,34 @@ if (form) {
     form.reset();
   });
 }
+// Contact Form Validation
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("contactForm");
+  const messageBox = document.getElementById("formMessage");
+
+  form.addEventListener("submit", function (event) {
+    event.preventDefault(); // stop page refresh
+
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    if (name === "" || email === "" || message === "") {
+      messageBox.style.color = "red";
+      messageBox.textContent = "⚠️ Please fill out all fields.";
+      return;
+    }
+
+    // Simple email validation
+    if (!/^[^ ]+@[^ ]+\.[a-z]{2,3}$/.test(email)) {
+      messageBox.style.color = "red";
+      messageBox.textContent = "⚠️ Please enter a valid email address.";
+      return;
+    }
+
+    // Success message
+    messageBox.style.color = "green";
+    messageBox.textContent = "✅ Thank you! Your message has been sent.";
+    form.reset(); // clear inputs
+  });
+});
