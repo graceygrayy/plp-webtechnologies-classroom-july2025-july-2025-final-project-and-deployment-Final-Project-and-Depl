@@ -897,6 +897,13 @@ footer a:hover {
   background: #fffdf8;
 }
 
+/* ===== Products Section ===== */
+.products {
+  padding: 60px 20px;
+  text-align: center;
+  background: #fffdf8;
+}
+
 .products h2 {
   font-size: 2em;
   color: #c19a6b;
