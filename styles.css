@@ -1,3 +1,60 @@
+/* Enhanced FAQ Styles */
+.enhanced-faq {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+  padding: 2.5rem 1.5rem;
+  margin: 0 auto 2.5rem auto;
+  max-width: 700px;
+}
+.enhanced-faq h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+.enhanced-faq .faq-item {
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #f1f1f1;
+  transition: background 0.2s;
+}
+.enhanced-faq .faq-item.open {
+  background: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+.enhanced-faq .faq-question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 1rem 1.2rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+  transition: background 0.2s;
+  cursor: pointer;
+}
+.enhanced-faq .faq-question:hover {
+  background: #f1f1f1;
+}
+.enhanced-faq .faq-icon {
+  font-size: 1.3rem;
+  transition: transform 0.3s;
+}
+.enhanced-faq .faq-answer {
+  display: none;
+  padding: 1rem 1.2rem 0 1.2rem;
+  color: #444;
+  animation: fadeIn 0.3s;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
 @media (min-width: 900px) {
   .product-grid {
     grid-template-columns: repeat(3, 1fr) !important;
@@ -25,6 +82,7 @@ a {
 h1, h2, h3 {
   margin-bottom: 0.5rem;
   color: #222;
+  text-align: center;
 }
 
 p {
@@ -106,10 +164,13 @@ p {
   z-index: 1;
 }
 
+
 .hero-text {
+  color: #fff !important;
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
+/* Removed stray position and z-index properties that were outside of a selector */
 
 .hero h1 {
   font-size: 2.5rem;
@@ -129,8 +190,29 @@ p {
   min-height: 350px;
 }
 
-.hero h1, .hero h2, .hero h3, .hero p, .hero a.btn {
+.hero h1, .hero h2, .hero h3, .hero p {
   color: #fff !important;
+  font-weight: 700 !important;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.85);
+  position: relative;
+  z-index: 3;
+}
+.hero .btn {
+  color: #fff !important;
+  background: rgba(248,193,70,0.98) !important;
+  border: 2px solid #fff;
+  text-shadow: none;
+  position: relative;
+  z-index: 3;
+  font-weight: 700;
+}
+.hero .btn {
+  color: #fff !important;
+  background: rgba(248,193,70,0.95) !important;
+  border: 2px solid #fff;
+  text-shadow: none;
+  position: relative;
+  z-index: 3;
 }
 
 .hero-slider-bg {
@@ -157,9 +239,7 @@ p {
 }
 }
 
-  position: relative;
-  z-index: 2;
-}
+/* Removed stray position and z-index properties that were outside of a selector */
 
 /* Products */
 .products, .products-page {
@@ -230,7 +310,7 @@ p {
   letter-spacing: 1px;
   transition: background 0.3s, color 0.3s, border 0.3s;
 }
-}
+
 
 .faq-question {
   width: 100%;

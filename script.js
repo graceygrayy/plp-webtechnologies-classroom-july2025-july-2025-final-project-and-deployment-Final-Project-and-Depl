@@ -1,3 +1,24 @@
+// FAQ accordion interaction (improved)
+document.querySelectorAll('.enhanced-faq .faq-question').forEach(btn => {
+  btn.addEventListener('click', function() {
+    const item = this.parentElement;
+    const answer = item.querySelector('.faq-answer');
+    const icon = this.querySelector('.faq-icon');
+    const isOpen = item.classList.contains('open');
+    // Close all
+    document.querySelectorAll('.enhanced-faq .faq-item').forEach(i => {
+      i.classList.remove('open');
+      i.querySelector('.faq-answer').style.display = 'none';
+      i.querySelector('.faq-icon').style.transform = 'rotate(0deg)';
+    });
+    // Open if not already open
+    if (!isOpen) {
+      item.classList.add('open');
+      answer.style.display = 'block';
+      icon.style.transform = 'rotate(180deg)';
+    }
+  });
+});
 // Hero background slider
 const heroImages = [
   'images/banner.jng.jpg',
