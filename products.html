@@ -3,95 +3,74 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Products - Graces Oil Perfume</title>
+  <title>Gracey Oil Perfume | Products</title>
   <link rel="stylesheet" href="styles.css">
-</head>
-
+  <script defer src="script.js"></script>
 </head>
 <body>
-
-  <!-- Navigation Bar (reuse same navbar from homepage) -->
-  <nav class="navbar">
-    <div class="logo">Graces Oil Perfume</div>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="products.html" class="active">Products</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">Gracey Oil Perfume</div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+      ☰
+    </button>
+    <nav id="nav-links">
+      <a href="index.html">Home</a>
+      <a href="products.html" class="active">Products</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
   <!-- Products Section -->
-  <section class="products">
-    <h2>Our Perfume Collection</h2>
-    <p class="section-subtitle">Explore our luxury oil perfumes crafted for men and women</p>
-
-  <div class="product-grid">
-      <!-- Product 1 -->
+  <main class="products-page">
+    <h1>Our Products</h1>
+    <p class="intro">
+      Discover our range of long-lasting and luxurious oil perfumes, crafted to bring elegance into your daily life.
+    </p>
+    <div class="product-grid">
       <div class="product-card">
-        <img src="images/product1.jpg" alt="Perfume 1">
-        <h3>Royal Oud</h3>
-        <p>Rich & woody fragrance for men.</p>
-        <span class="price">$45</span>
+        <img src="images/perfume1.jpg" alt="Rose Oud">
+        <h3>Rose Oud</h3>
+        <p class="price">$25</p>
         <a href="#" class="btn">Buy Now</a>
       </div>
-
-      <!-- Product 2 -->
       <div class="product-card">
-        <img src="images/product2.jpg" alt="Perfume 2">
-        <h3>Velvet Rose</h3>
-        <p>Floral and elegant scent for women.</p>
-        <span class="price">$50</span>
+        <img src="images/perfume2.jpg" alt="Amber Musk">
+        <h3>Amber Musk</h3>
+        <p class="price">$30</p>
         <a href="#" class="btn">Buy Now</a>
       </div>
-
-      <!-- Product 3 -->
       <div class="product-card">
-        <img src="images/product3.jpg" alt="Perfume 3">
-        <h3>Amber Gold</h3>
-        <p>Warm & sweet unisex fragrance.</p>
-        <span class="price">$55</span>
+        <img src="images/perfume3.jpg" alt="Vanilla Spice">
+        <h3>Vanilla Spice</h3>
+        <p class="price">$28</p>
         <a href="#" class="btn">Buy Now</a>
       </div>
-
-      <!-- Product 4 -->
       <div class="product-card">
-        <img src="images/product4.jpg" alt="Perfume 4">
-        <h3>Midnight Musk</h3>
-        <p>Intense and mysterious aroma.</p>
-        <span class="price">$60</span>
+        <img src="images/perfume4.jpg" alt="Jasmine Bloom">
+        <h3>Jasmine Bloom</h3>
+        <p class="price">$26</p>
         <a href="#" class="btn">Buy Now</a>
       </div>
-
-      <!-- Product 5 -->
       <div class="product-card">
-        <img src="images/product5.jpg" alt="Perfume 5">
-        <h3>Golden Jasmine</h3>
-        <p>Fresh & sensual feminine scent.</p>
-        <span class="price">$48</span>
+        <img src="images/perfume5.jpg" alt="Sandalwood Essence">
+        <h3>Sandalwood Essence</h3>
+        <p class="price">$32</p>
         <a href="#" class="btn">Buy Now</a>
       </div>
-
-      <!-- Product 6 -->
       <div class="product-card">
-        <img src="images/product6.jpg" alt="Perfume 6">
-        <h3>Desert Leather</h3>
-        <p>Bold leather fragrance for men.</p>
-        <span class="price">$52</span>
+        <img src="images/perfume6.jpg" alt="Citrus Fresh">
+        <h3>Citrus Fresh</h3>
+        <p class="price">$22</p>
         <a href="#" class="btn">Buy Now</a>
       </div>
     </div>
-  </section>
+  </main>
 
   <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Graces Oil Perfume. All rights reserved.</p>
-    <p>
-      <a href="#">Facebook</a> | 
-      <a href="#">Instagram</a> | 
-      <a href="#">Contact Us</a>
-    </p>
+  <footer class="footer">
+    <p>&copy; 2025 Gracey Oil Perfume | All Rights Reserved</p>
   </footer>
-
 </body>
 </html>
